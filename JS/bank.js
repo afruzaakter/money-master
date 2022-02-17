@@ -8,7 +8,6 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 document.getElementById('save-btn').addEventListener('click', function(){
     savingTotal()
     remainingBalance()
-
     
 });
 
@@ -76,12 +75,6 @@ function remainingBalance(){
 
     
     
- 
-
-
-
-
-
 
 
 
