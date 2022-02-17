@@ -22,10 +22,12 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 });
 
 document.getElementById('save-btn').addEventListener('click', function(){
-    const saveIncomeInput = document.getElementById('income-input');
-    const saveIncomeAmount = saveIncomeInput.value;
+    const saveIncomeInput = document.getElementById('income-input').value;
+    const saveIncomeInputAmount = parseInt(saveIncomeInput);
     
-
+    const saveInput = document.getElementById('saving-amount');
+    const saveIncomeAmount = saveInput.innerText;
+    saveInput.innerText = (saveIncomeInputAmount * 10) / 100;   
 })
 
 
