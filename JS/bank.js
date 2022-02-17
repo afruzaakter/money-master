@@ -65,7 +65,7 @@ function remainingBalance(){
     let remainingTotalAmount = remainingBalanceInput.innerText;
     remainingBalanceInput.innerText = parseFloat(balanceTotalAmount) - parseFloat(savingTotalAmount);
 
-    // return remainingTotalAmount;
+    return remainingTotalAmount;
 }
 
 
