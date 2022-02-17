@@ -2,7 +2,7 @@
 document.getElementById('calculate-btn').addEventListener('click', function(){
     expenses();
     balance();  
-    remainingBalance()  
+    
 });
 
 document.getElementById('save-btn').addEventListener('click', function(){
@@ -26,9 +26,6 @@ function expenses(){
   
 
 }
-
-
-
 
 
 //---------------balance part ------------------
@@ -67,7 +64,8 @@ function remainingBalance(){
     let remainingBalanceInput = document.getElementById('remaining-balance'); 
     let remainingTotalAmount = remainingBalanceInput.innerText;
     remainingBalanceInput.innerText = parseFloat(balanceTotalAmount) - parseFloat(savingTotalAmount);
-    return remainingTotalAmount;
+
+    // return remainingTotalAmount;
 }
 
 
